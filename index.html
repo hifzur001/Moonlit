@@ -58,6 +58,7 @@
                         class="navbar-brand"
                         href="#"
                         data-aos="fade-up"
+                        title="logo"
                         data-aos-duration="500"
                     >
                         <img
@@ -86,35 +87,37 @@
                                 data-aos="fade-up"
                                 data-aos-duration="900"
                             >
-                                <a class="nav-link px-3" href="#">Home</a>
+                                <a class="nav-link px-3" href="#">Starters</a>
                             </li>
                             <li
                                 class="nav-item"
                                 data-aos="fade-up"
                                 data-aos-duration="1100"
                             >
-                                <a class="nav-link px-3" href="#">Skincare</a>
+                                <a class="nav-link px-3" href="#"
+                                    >Main Courses</a
+                                >
                             </li>
                             <li
                                 class="nav-item"
                                 data-aos="fade-up"
                                 data-aos-duration="1300"
                             >
-                                <a class="nav-link px-3" href="#">Makeup</a>
+                                <a class="nav-link px-3" href="#">Vegetarian</a>
                             </li>
                             <li
                                 class="nav-item"
                                 data-aos="fade-up"
                                 data-aos-duration="1500"
                             >
-                                <a class="nav-link px-3" href="#">Hair Care</a>
+                                <a class="nav-link px-3" href="#">Desserts</a>
                             </li>
                             <li
                                 class="nav-item"
                                 data-aos="fade-up"
                                 data-aos-duration="1700"
                             >
-                                <a class="nav-link px-3" href="#">Offers</a>
+                                <a class="nav-link px-3" href="#">Beverages</a>
                             </li>
                         </ul>
 
@@ -371,34 +374,94 @@
         </div>
 
         <!-- Orders Section -->
-        <div class="container my-5 d-none" id="ordersSection">
-            <h2>My Orders</h2>
-            <div id="ordersContent" class="mt-3">
-                <!-- Orders will be displayed here -->
+        <!-- Orders Section Modal -->
+        <div
+            class="modal fade"
+            id="ordersModal"
+            tabindex="-1"
+            aria-labelledby="ordersModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ordersModalLabel">
+                            My Orders
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="ordersContent">
+                            <!-- Orders will be displayed here dynamically -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Coupons Section -->
-        <div class="container my-5 d-none" id="couponsSection">
-            <h2>My Coupons</h2>
-            <div id="couponsContent" class="mt-3">
-                <!-- Coupons will be displayed here -->
+        <!-- Coupons Section Modal -->
+        <div
+            class="modal fade"
+            id="couponsModal"
+            tabindex="-1"
+            aria-labelledby="couponsModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="couponsModalLabel">
+                            My Coupons
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="couponsContent">
+                            <!-- Coupons will be displayed here dynamically -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Addresses Section -->
-        <div class="container my-5 d-none" id="addressesSection">
-            <h2>My Addresses</h2>
-            <div id="addressesContent" class="mt-3">
-                <!-- Addresses will be displayed here -->
+        <!-- Addresses Section Modal -->
+        <div
+            class="modal fade"
+            id="addressesModal"
+            tabindex="-1"
+            aria-labelledby="addressesModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addressesModalLabel">
+                            My Addresses
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="addressesContent">
+                            <!-- Addresses will be displayed here dynamically -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button
-                class="btn btn-beauty mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#addressModal"
-            >
-                Add Address
-            </button>
         </div>
 
         <!-- Address Modal -->
@@ -624,6 +687,118 @@
                 </div>
             </div>
         </section>
+        <section class="about-section regular py-5">
+            <div class="container">
+                <div class="about-header">
+                    <h1
+                        class="about-title clash-medium"
+                        data-aos="fade-down"
+                        data-aos-delay="200"
+                    >
+                        About Moonlit Plate
+                    </h1>
+                    <p
+                        class="about-subtitle clash-regular"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        Where culinary artistry meets moonlit ambiance, creating
+                        unforgettable dining experiences since 1970.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div
+                            class="about-card"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                        >
+                            <i
+                                class="card-icon fas fa-history"
+                                data-aos="fade-up"
+                                data-aos-delay="700"
+                            ></i>
+                            <h3
+                                class="card-title"
+                                data-aos="fade-up"
+                                data-aos-delay="800"
+                            >
+                                Our Heritage
+                            </h3>
+                            <p
+                                class="card-text"
+                                data-aos="fade-up"
+                                data-aos-delay="900"
+                            >
+                                Founded by the visionary Chef Maria Luna,
+                                Moonlit Plate has been serving exceptional
+                                cuisine for over five decades, blending
+                                traditional.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="about-card"
+                            data-aos="fade-up"
+                            data-aos-delay="1000"
+                        >
+                            <i
+                                class="card-icon fas fa-star"
+                                data-aos="fade-up"
+                                data-aos-delay="1100"
+                            ></i>
+                            <h3
+                                class="card-title"
+                                data-aos="fade-up"
+                                data-aos-delay="1200"
+                            >
+                                Our Mission
+                            </h3>
+                            <p
+                                class="card-text"
+                                data-aos="fade-up"
+                                data-aos-delay="1300"
+                            >
+                                To create extraordinary dining experiences that
+                                celebrate the art of gastronomy while fostering
+                                meaningful connections among our guests.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="about-card"
+                            data-aos="fade-up"
+                            data-aos-delay="1400"
+                        >
+                            <i
+                                class="card-icon fas fa-leaf"
+                                data-aos="fade-up"
+                                data-aos-delay="1500"
+                            ></i>
+                            <h3
+                                class="card-title"
+                                data-aos="fade-up"
+                                data-aos-delay="1600"
+                            >
+                                Our Ingredients
+                            </h3>
+                            <p
+                                class="card-text"
+                                data-aos="fade-up"
+                                data-aos-delay="1700"
+                            >
+                                We source the finest local and seasonal
+                                ingredients, partnering with sustainable farms
+                                to ensure every dish tells a story of quality
+                                and care.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Blob Background -->
         <div class="blob-container">
             <div class="blob blob-1"></div>
@@ -634,8 +809,10 @@
 
         <div class="container py-5">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h1 class="display-4 fw-bold">Featured Categories</h1>
-                <p class="text-muted">
+                <h1 class="display-4 fw-bold clash-medium">
+                    Featured Categories
+                </h1>
+                <p class="text-muted clash-regular">
                     Explore our diverse selection of culinary delights, from
                     quick bites to gourmet experiences.
                 </p>
@@ -775,7 +952,380 @@
                 </div>
             </div>
         </div>
+        <!-- Our Special Menu -->
+        <div class="background-animation">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
 
+        <div class="regular">
+            <div class="container py-5">
+                <h1 class="text-center mb-2 clash-medium" data-aos="fade-down">
+                    Our Regular Food Collections
+                </h1>
+                <p class="text-center mb-3 clash-regular" data-aos="fade-up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+
+                <div class="filter-buttons mb-5" data-aos="fade-up">
+                    <button
+                        class="filter-btn axiforma-regular active"
+                        data-filter="all"
+                    >
+                        All Menu
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="fast-food"
+                    >
+                        Burgers &amp; Fries
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="platters"
+                    >
+                        Signature Platters
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="dessert"
+                    >
+                        Delectable Desserts
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="asian"
+                    >
+                        Asian Fusion
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="vegan"
+                    >
+                        Vegan Delights
+                    </button>
+                    <button
+                        class="filter-btn axiforma-regular"
+                        data-filter="beverages"
+                    >
+                        Refreshing Beverages
+                    </button>
+                </div>
+
+                <div class="row g-4" id="food-grid">
+                    <!-- Food items will be inserted by JavaScript -->
+                </div>
+
+                <div class="text-center mt-5">
+                    <button class="view-more-btn btn btn-primary">
+                        View More Collection
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="chefs-special">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+
+            <div class="container">
+                <h2 class="section-title clash-medium" data-aos="fade-down">
+                    Chef's Special
+                </h2>
+
+                <div class="row">
+                    <!-- Dish 1 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1600891964092-4316c288032e"
+                                    alt="Grilled Salmon"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Grilled Salmon</h3>
+                                <p class="dish-price">$29.99</p>
+                                <p class="dish-description">
+                                    Fresh Atlantic salmon, grilled to perfection
+                                    with herbs and lemon.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('salmon')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 2 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7"
+                                    alt="Beef Wellington"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Beef Wellington</h3>
+                                <p class="dish-price">$45.99</p>
+                                <p class="dish-description">
+                                    Premium beef tenderloin wrapped in puff
+                                    pastry with mushroom duxelles.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('beef')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 3 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560717845-968823efbee1"
+                                    alt="Lobster Thermidor"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Lobster Thermidor</h3>
+                                <p class="dish-price">$52.99</p>
+                                <p class="dish-description">
+                                    Succulent lobster in a rich cream sauce with
+                                    Gruyère cheese.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('lobster')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 4 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1544025162-d76694265947"
+                                    alt="Duck à l'Orange"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Duck à l'Orange</h3>
+                                <p class="dish-price">$48.99</p>
+                                <p class="dish-description">
+                                    Crispy duck breast with caramelized orange
+                                    sauce and seasonal vegetables.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('duck')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853"
+                                    alt="Truffle Risotto"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Truffle Risotto</h3>
+                                <p class="dish-price">$36.99</p>
+                                <p class="dish-description">
+                                    Creamy Arborio rice with black truffle and
+                                    aged Parmesan.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('risotto')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div
+                        class="col-md-4"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    >
+                        <div class="dish-card">
+                            <div class="dish-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307"
+                                    alt="Wagyu Steak"
+                                />
+                            </div>
+                            <div class="dish-content">
+                                <h3 class="dish-title">Wagyu Steak</h3>
+                                <p class="dish-price">$89.99</p>
+                                <p class="dish-description">
+                                    Premium Japanese Wagyu beef with truffle
+                                    butter and roasted garlic.
+                                </p>
+                                <button
+                                    class="order-btn"
+                                    onclick="openModal('wagyu')"
+                                >
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="dishModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+        <!-- Add to Cart Modal -->
+        <div
+            class="modal fade"
+            id="cartModal"
+            tabindex="-1"
+            aria-labelledby="cartModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">
+                            Your Cart
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="cartItems"></div>
+                        <div class="mt-3">
+                            <h6 class="fw-bold">
+                                Total: $<span id="cartTotal">0</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="checkoutBtn"
+                        >
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Modal -->
+        <div
+            class="modal fade"
+            id="productModal"
+            tabindex="-1"
+            aria-labelledby="productModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="" alt="" class="modal-img" />
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="modal-title mb-3"></h2>
+                                <div class="modal-price mb-3"></div>
+                                <div class="modal-category mb-4"></div>
+                                <p class="modal-description mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="cart-buttons modal-cart-buttons">
+                                    <button class="cart-btn minus" data-id="">
+                                        -
+                                    </button>
+                                    <span class="quantity">0</span>
+                                    <button class="cart-btn plus" data-id="">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Special Menu -->
         <!-- Modals -->
         <!-- Fast Food Modal -->
         <div
@@ -1136,6 +1686,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
